@@ -1,0 +1,99 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(167, 230, 255);
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 90px;
+    background-color: rgb(167, 230, 255);;
+}
+
+nav h1 {
+    padding: 1em;
+    background-color: rgb(167, 230, 255);
+    font-size:2em ;
+}
+
+nav button {
+    margin: 1em;
+    font-size: 1em;
+    background-color: rgb(32, 192, 255);
+    border-radius: 2em;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(167, 230, 255);
+    font-size: 1em;
+}
+
+.bienvenida{
+    display: flex;
+    height: 9em;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    background-color: rgb(108, 210, 250) ;
+}
+
+.pSaludo{
+    background-color:rgb(108, 210, 250)  ;
+}
+
+.logIn{
+    background-color: rgb(108, 210, 250);
+    margin: 2em;
+    padding: 2em;
+    width: fit-content;
+    height:fit-content;
+    border-radius:2em;
+    font-size: 1.3em;
+}
+
+.logIn input {
+    display: block;
+    background-color: white;
+    width: 100%;
+}
+
+h2, h3{
+    background-color: rgba(81, 206, 255, 0.295);
+    padding: 0;
+}
+
+footer {
+    background-color: rgba(0, 112, 156, 0.295);
+    height: 100%;
+    background-color: rgb(92, 156, 252);
+    font-size: 1.2em;
+}
+
+footer p {
+      color: #e9e9e9;
+      font-size: 2em;
+
+    }
+footer .img-footer {
+      height: 7em;
+      width: 10em; }
+footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+footer ul li {
+      justify-content: space-between;
+      list-style: none; }
+footer ul li img {
+        height: 3em;
+        width: 3em;
+        padding-left: 2em;
+} 
+a{
+    text-decoration: none;
+}
