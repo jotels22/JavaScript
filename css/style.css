@@ -1,6 +1,8 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(167, 230, 255);
+}
+body{
+    background-color: #1A5E63;
 }
 
 nav{
@@ -8,27 +10,39 @@ nav{
     justify-content:space-between;
     align-items: center;
     height: 90px;
-    background-color: rgb(167, 230, 255);;
+    background-color:#1A5E63;
 }
 
 nav h1 {
     padding: 1em;
-    background-color: rgb(167, 230, 255);
+    background-color: #1A5E63;
     font-size:2em ;
+    color: #fff;
 }
 
-nav button {
-    margin: 1em;
-    font-size: 1em;
-    background-color: rgb(32, 192, 255);
-    border-radius: 2em;
+button {
+    background:#1A5E63;
+    margin: 1em 1em 1em 1em;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+}
+button:hover{
+    background:#fff;
+    color:#1AAB8A;
 }
 
 main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(167, 230, 255);
+    background-color: #1A5E63;
     font-size: 1em;
 }
 
@@ -39,15 +53,16 @@ main{
     align-items: center;
     font-size: 1.2em;
     font-weight: 700;
-    background-color: rgb(108, 210, 250) ;
+    background-color: #1aab897a ;
+    color: white;
 }
 
 .pSaludo{
-    background-color:rgb(108, 210, 250)  ;
+    background-color:#1aab897a  ;
 }
 
 .logIn{
-    background-color: rgb(108, 210, 250);
+    background-color:#1aab897a;
     margin: 2em;
     padding: 2em;
     width: fit-content;
@@ -63,22 +78,16 @@ main{
 }
 
 h2, h3{
-    background-color: rgba(81, 206, 255, 0.295);
     padding: 0;
+    color: white;
 }
 
 footer {
-    background-color: rgba(0, 112, 156, 0.295);
     height: 100%;
-    background-color: rgb(92, 156, 252);
+    background-color:#1A5E63;
     font-size: 1.2em;
 }
 
-footer p {
-      color: #e9e9e9;
-      font-size: 2em;
-
-    }
 footer .img-footer {
       height: 7em;
       width: 10em; }
@@ -87,8 +96,10 @@ footer ul {
     justify-content: space-between;
 }
 footer ul li {
-      justify-content: space-between;
-      list-style: none; }
+    justify-content: space-between;
+    list-style: none; 
+    color: #fff;
+}
 footer ul li img {
         height: 3em;
         width: 3em;
@@ -96,4 +107,5 @@ footer ul li img {
 } 
 a{
     text-decoration: none;
+    color:#1aab897a 
 }
