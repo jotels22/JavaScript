@@ -20,6 +20,12 @@ nav h1 {
     color: #fff;
 }
 
+input{
+    height: 2em;
+    text-align: center;
+    padding: 0;
+}
+
 button {
     background:#1A5E63;
     margin: 1em 1em 1em 1em;

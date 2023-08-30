@@ -15,11 +15,37 @@ table th {
 body{
     background-color: #1A5E63;
 }
-h1{
-    color: #fff;
+.h1-title{
+    color:#ffffff;
+    
     font-size: 3em;
     text-align: center;
+    background-color: #1aab897a;
+    border-radius: .3em;
+    padding: 1em;
+    margin: 0 16px 0 16px;
+    background-image: url(../img/banner-1090830.jpg);
+    background-size: cover;
 }
+
+.h1-tabla{
+    color:#ffffff;
+    font-size: 3em;
+    text-align: center;
+    background-color: #1aab897a;
+    border-radius: 0;
+    padding: 1em;
+    margin: 0 16px 0 16px;
+    background-size: cover;
+    text-decoration: underline;
+}
+
+h1 span {
+    background-color: #1aab8998;
+    border-radius: .3em
+
+}
+
 h3{
     margin-top: 0;
     color: #fff;
@@ -51,8 +77,22 @@ button {
 }
 button:hover{
     background:#fff;
-    color:#1AAB8A;
-  }
+    color:#1AAB8A;  }
+
+    button p {
+        font-size: 1em;
+        padding: 0;
+        margin: 0;
+    }
+
+.pregunta5 div, .pregunta6 div {
+    background: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+
+}
 
 input{
     border-radius: 1em;
@@ -61,6 +101,7 @@ input{
     font-size: 1em;
     text-align: center;
     background-color: #bdfff05b;
+    color: white;
 }
 
 .bandera{
@@ -97,6 +138,100 @@ input{
     padding: 1em;
 }
 
+.resultado-{
+    text-align: center; 
+    font-family: Arial Black; 
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #ffd5d5; 
+    text-shadow: 1px 1px #ff0000, 1px 1px #ff0000, 3px 1px #ff0000, 1px 1px #ff00004f;
+}
+
 .resultado{
-     font-size: 2em;
+    text-align: center; 
+    font-family: Arial Black; 
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #a7ffa3; 
+    text-shadow: 1px 1px #006305, 1px 1px #015505, 3px 1px #006d05, 1px 1px #00ff0d7a;
+}
+
+.swal2-timer-progress-bar-container{
+    display: none;
+}
+
+#swal2-title{
+    text-align: center ; 
+    
+    font-family: Arial Black; 
+    font-weight: bold; 
+    font-size: 30px; 
+    color: rgba(194, 194, 255, 0.4); 
+    text-shadow: 1px 1px rgba(210, 210, 250, 0.4), 1px 1px rgba(209, 209, 255, 0.4), 3px 1px rgba(123, 123, 230, 0.4), 1px 1px rgba(100, 100, 223, 0.4)
+}
+
+
+@media screen and (max-width: 800px) {
+    *{
+        font-size: .9em;
+    }
+
+    button{
+        padding: 0;
+        margin: 1em;
+        width: 8em;   
+        height: 3em;
+        font-size: 1em;
+        text-align: center;        
+    }
+
+    input {
+        width: 50%;
+    }
+
+
+    .bandera{
+        margin: 1em;
+        padding: 0em;
+    }
+    .pregunta5 div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: none;
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+    }
+
+    #btn5{
+        margin: 0;
+        margin-right: 2em;
+    }
+    .pregunta6{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center; 
+        padding: 1em;  
+    }
+
+    .pregunta6 div {
+        display: flex;
+        align-items: center;
+        background: none;
+        flex-wrap: nowrap;
+        font-size: 1em;
+        padding: 0em;
+        margin: 1em;
+        width: 100%;
+    }
+
+  
+
+    button p {
+    font-size: 1.3em;
+    padding: 0;
+    margin: 0;
+}
 }

@@ -3,59 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preguntas</title>
+
+    <title>✨❓ Cuestionario de Preguntas ✨❓</title>
 
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <header>   
-        <h1>❓✨ CUESTIONARIO DE PREGUNTAS ✨❓</h1>
+        <h1 class="h1-title">✨❓ <span> CUESTIONARIO DE PREGUNTAS </span>✨❓</h1>
     </header>
     <main>
         <div class="pregunta1">
             <h3> Pregunta 1 : ¿Cual es la capital de Argentina? </h3>
-            <button id="btn1-RtaCorrecta">Buenos Aires</button>
-            <button class="btn1-RtaInorrecta">Montevideo</button>
-            <button class="btn1-RtaInorrecta">La Plata</button>
-            <button class="btn1-RtaInorrecta">Ascunción</button>
+            <button id="btn1-RtaCorrecta"><p>Buenos Aires</p></button>
+            <button class="btn1-RtaInorrecta"><p>Montevideo</p></button>
+            <button class="btn1-RtaInorrecta"><p>La Plata</p></button>
+            <button class="btn1-RtaInorrecta"><p>Ascunción</p></button>
         </div>
         <div class="pregunta2">
             <h3> Pregunta 2 : ¿Cuáles son los primeros 6 dígitos de PI? </h3>
-            <button class="btn2-RtaInorrecta">3.14897</button>
-            <button class="btn2-RtaInorrecta">4.21321</button>
-            <button id="btn2-RtaCorrecta">3.14159</button>
-            <button class="btn2-RtaInorrecta">3.14</button>
+            <button class="btn2-RtaInorrecta"><p>3.14897</p></button>
+            <button class="btn2-RtaInorrecta"><p>4.21321</p></button>
+            <button id="btn2-RtaCorrecta"><p>3.14159</p></button>
+            <button class="btn2-RtaInorrecta"><p>3.14</p></button>
         </div>
         <div class="pregunta3">
             <h3> Pregunta 3 : Nombrar uno de los 8 planetas del sistema solar 🪐</h3>
             <input id="input3" type="text">
-            <button id="btn3">Enviar</button>
+            <button id="btn3"><p>Enviar</p></button>
         </div>
         <div class="pregunta4">
             <h3>  Pregunta 4 : ¿Cuántas Champions League ganó messi? (esta pregunta tiene 3 intentos) ⚽</h3>
             <input type="text" id="input4">
-            <button id="btn4">Enviar</button>
+            <button id="btn4"><p>Enviar</p></button>
         </div>
         <div class="pregunta5">
             <h3> Pregunta 5 :Nombrar el unico color NO PRIMARIO de la bandera de la Isla Mauricio</h3>
-            <input type="text" id="input5">
-            <button id="btn5">Enviar</button >
-            <img class="bandera" src="../img/banderaMauricio.png" alt="islaMauricio">
+            <div>
+                <input type="text" id="input5">
+                <button id="btn5"><p>Enviar</p></button >
+                <img class="bandera" src="../img/banderaMauricio.png" alt="islaMauricio">
+            </div>
         </div>
         <div class="pregunta6">
             <h3> Pregunta 6 : ¿Cual el único color PRIMARIO en la bandera de Emiratos Árabes Unidos?</h3> 
-            <button class="btn6-RtaInorrecta">Verde</button>
-            <button class="btn6-RtaInorrecta">Negro</button>
-            <button class="btn6-RtaInorrecta">Blanco</button>
-            <button id="btn6-RtaCorrecta"></button>
-            <img class="bandera" src="../img/banderaEAU.png" alt="EAU">
+            <div>
+                <button class="btn6-RtaInorrecta"><p>Verde</p></button>
+                <button class="btn6-RtaInorrecta"><p>Negro</p></button>
+                <button class="btn6-RtaInorrecta"><p>Blanco</p></button>
+                <button id="btn6-RtaCorrecta"></button>
+                <img class="bandera" src="../img/banderaEAU.png" alt="EAU">
+            </div>
+            
         </div>
         <div class="pregunta7">
             <h3> Pregunta 7 : Dadas las siguientes capitales, ¿De que país hablamos si este es limitrofe con los países de dichas capitales?: Brasilia, Ascunción, Santiago, Montevideo y La Paz</h3>
-            <button class="btn7-RtaInorrecta" >Brasil</button>
-            <button class="btn7-RtaInorrecta">Colombia</button>
-            <button class="btn7-RtaInorrecta">Uruguay</button>
-            <button id="btn7-RtaCorrecta">Ninguna de las anteriores</button>
+            <button class="btn7-RtaInorrecta" ><p>Brasil</p></button>
+            <button class="btn7-RtaInorrecta"><p>Colombia</p></button>
+            <button class="btn7-RtaInorrecta"><p>Uruguay</p></button>
+            <button id="btn7-RtaCorrecta"><p>Ninguna de las anteriores</p></button>
         </div>
         <div class="pregunta8">
             <h3>Pregunta 8 : Dado el siguiente cuadro responder:</h3> 
@@ -92,25 +98,27 @@
                 </tr>
             </table>
             <h3>¿Cuál es el país con mas población?</h3>
-            <button class="btn8-RtaInorrecta">Bolivia</button>
-            <button class="btn8-RtaInorrecta">Uruguay</button>
+            <button class="btn8-RtaInorrecta"><p>Bolivia</p></button>
+            <button class="btn8-RtaInorrecta"><p>Uruguay</p></button>
             <button id="btn8-RtaCorrecta"></button>
-            <button class="btn8-RtaInorrecta" class="btn7-RtaInorrecta">Paraguay</button>
+            <button class="btn8-RtaInorrecta" class="btn7-RtaInorrecta"><p>Paraguay</p></button>
         </div>
         <div class="pregunta9">
             <h3>Pregunta 9 : ¿Cuánto da la suma entre la población de Paraguay y Bolivia?</h3>
             <input id="input9" type="text">
-            <button id="btn9">Enviar</button>
+            <button id="btn9"><p>Enviar</p></button>
         </div>
         <div class="pregunta10">
             <h3 id="pregunta10"></h3>
-            <button id="btn10">Mayor</button>
-            <button id="btn11">Menor</button>
+            <button id="btn10"><p>Mayor</p></button>
+            <button id="btn11"><p>Menor</p></button>
         </div>
     </main>
     <footer>
 
     </footer>
     <script src="../preguntas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 </html>

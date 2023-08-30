@@ -9,15 +9,64 @@ const pregunta1 = document.querySelector(".pregunta1")
 const btn1RtaCorrecta = document.querySelector("#btn1-RtaCorrecta");
 const btn1RtasIncorrectas = document.querySelectorAll(".btn1-RtaInorrecta");
 
+
+
+
 btn1RtaCorrecta.addEventListener("click", () => {
-    pregunta1.innerHTML = `<p class="resultado"> ¡CORRECTO!</p>`
+    pregunta1.innerHTML = `<p class="resultado"> ✅ ¡CORRECTO!</p>`
     nota++
     console.log(nota);
+            
+    setInterval(()=>{
+    
+        Swal.fire({
+        title: `             ¡SUERTE!
+
+
+                            //Espacio Publicitado Por NyanCat//
+        `,
+        width: 600,
+        padding: '3em',
+        color: '#fff' ,
+        background: `#1AAB8A url("/img/nyan-cat-4k.gif") `,
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("/img/nyan-cat-4k.gif")
+          cover
+          repeat
+        `
+      })
+    
+    },6000
+    )
 }
 )
 btn1RtasIncorrectas.forEach(btn => {
     btn.addEventListener("click", () => {
-        pregunta1.innerHTML = `<p class="resultado">Mal</p>`
+        pregunta1.innerHTML = `<p class="resultado-"> ❌ MAL</p>`
+
+        setInterval(()=>{
+    
+            Swal.fire({
+            title: `             ¡SUERTE!
+    
+    
+                                //Espacio Publicitado Por NyanCat//
+            `,
+            width: 600,
+            padding: '3em',
+            color: '#fff' ,
+            background: `#1AAB8A url("/img/nyan-cat-4k.gif") `,
+            backdrop: `
+              rgba(0,0,123,0.4)
+              url("/img/nyan-cat-4k.gif")
+              cover
+              repeat
+            `
+          })
+        
+        },6000
+        )
     }
     )
 })
@@ -27,14 +76,14 @@ const btn2RtaCorrecta = document.querySelector("#btn2-RtaCorrecta");
 const btn2RtasIncorrectas = document.querySelectorAll(".btn2-RtaInorrecta");
 
 btn2RtaCorrecta.addEventListener("click", () => {
-    pregunta2.innerHTML = `<p class="resultado">Muy bien en matematica</p>`
+    pregunta2.innerHTML = `<p class="resultado"> ✅ Muy bien en matematica</p>`
     nota++
     console.log(nota);
 }
 )
 btn2RtasIncorrectas.forEach(btn => {
     btn.addEventListener("click", () => {
-        pregunta2.innerHTML = `<p class="resultado">Nop  ¿Flojos en matematica?</p>`
+        pregunta2.innerHTML = `<p class="resultado-"> ❌ Nop, ¿Flojos en matematica?</p>`
     }
     )
 })
@@ -52,7 +101,7 @@ input3.addEventListener("input", (event) => {
 
         switch (respuestaUsuario) {
             case "venus":
-                pregunta3.innerHTML = `<p class="resultado">¡Correcto! \n Buena eleccion </p>`
+                pregunta3.innerHTML = `<p class="resultado"> ✅ ¡Correcto! \n Buena eleccion </p>`
                 nota++
                 console.log(nota);
                 break
@@ -61,35 +110,35 @@ input3.addEventListener("input", (event) => {
                 nota++
                 break
             case "mercurio":
-                pregunta3.innerHTML = `<p class="resultado">¡Correcto! \n Buena eleccion </p>`
+                pregunta3.innerHTML = `<p class="resultado"> ✅ ¡Correcto! \n Buena eleccion </p>`
                 nota++
                 console.log(nota);
                 break
             case "tierra":
-                pregunta3.innerHTML = `<p class="resultado">¡Correcto! \n Nuestro hogar, el planeta Tierra, es un planeta terrestre y rocoso.</p>`
+                pregunta3.innerHTML = `<p class="resultado"> ✅ ¡Correcto! \n Nuestro hogar, el planeta Tierra, es un planeta terrestre y rocoso.</p>`
                 nota++
                 break
             case "jupiter":
-                pregunta3.innerHTML = `<p class="resultado">¡Correcto! \n Júpiter es un gigante hecho de gas, y no tiene una superficie sólida, pero puede tener un núcleo interno sólido de aproximadamente el tamaño de la Tierra.</p>`
+                pregunta3.innerHTML = `<p class="resultado"> ✅ ¡Correcto! \n Júpiter es un gigante hecho de gas, y no tiene una superficie sólida, pero puede tener un núcleo interno sólido de aproximadamente el tamaño de la Tierra.</p>`
                 nota++
                 break
             case "saturno":
-                pregunta3.innerHTML = `<p class="resultado">¡Correcto! \n Cuenta con un precioso grupo de siete anillos separados por espacio entre ellos." </p>`
+                pregunta3.innerHTML = `<p class="resultado"> ✅ ¡Correcto! \n Cuenta con un precioso grupo de siete anillos separados por espacio entre ellos." </p>`
                 nota++
                 break
             case "neptuno":
-                pregunta3.innerHTML = `<p class="resultado">Correcto!\n Su atmósfera se compone de hidrógeno, helio y metano.</p>`
+                pregunta3.innerHTML = `<p class="resultado"> ✅ Correcto!\n Su atmósfera se compone de hidrógeno, helio y metano.</p>`
                 nota++
                 break
             case "urano":
-                pregunta3.innerHTML = `<p class="resultado">¡Correcto! \n Urano está compuesto de agua, metano y amoniaco sobre un pequeño centro rocoso. </p>`
+                pregunta3.innerHTML = `<p class="resultado"> ✅ ¡Correcto! \n Urano está compuesto de agua, metano y amoniaco sobre un pequeño centro rocoso. </p>`
                 nota++
                 break
             case "pluton":
-                pregunta3.innerHTML = `<p class="resultado">¡Incorrecto! \n Caíste en la trampa de pensar que es un planeta" </p>`
+                pregunta3.innerHTML = `<p class="resultado-"> ❌ ¡Incorrecto! \n Caíste en la trampa de pensar que es un planeta" </p>`
                 break
             default:
-                pregunta3.innerHTML = `<p class="resultado">¡Incorrecto! \n Sea lo q sea eso, no es un planeta</p>`
+                pregunta3.innerHTML = `<p class="resultado-"> ❌ ¡Incorrecto! \n Sea lo q sea eso, no es un planeta</p>`
                 break
         }
     })
@@ -111,12 +160,12 @@ input4.addEventListener("input", (event) => {
         input4.value = ""
 
     } else {
-        pregunta4.innerHTML = `<p class="resultado">Muy bien, las gano en 2006, 2009, 2011 y 2015</p>`
+        pregunta4.innerHTML = `<p class="resultado"> ✅  ✅ Muy bien, las gano en 2006, 2009, 2011 y 2015</p>`
         nota++
         console.log(nota);
     }
     if (intentos === 0) {
-        pregunta4.innerHTML = `<p class="resultado">Te quedaste sin intentos :(</p>`
+        pregunta4.innerHTML = `<p class="resultado-"> ❌ Te quedaste sin intentos :(</p>`
     }
     })})
 
@@ -141,11 +190,11 @@ input5.addEventListener("input", (event) => {
     
     btn5.addEventListener("click", (event) => {
         if (input5.value === islaMauricio.color3) {
-            pregunta5.innerHTML = `<p class="resultado">Yess, ${islaMauricio.color3} es el correcto¡¡!¡</p>`
+            pregunta5.innerHTML = `<p class="resultado"> ✅ Yess, ${islaMauricio.color3} es el correcto¡¡!¡</p>`
             nota++
             console.log(nota);
         } else {
-            pregunta5.innerHTML = `<p class="resultado"> Nop ${input5.value} no esta bien... :/</p>`            
+            pregunta5.innerHTML = `<p class="resultado-"> ❌ Nop ${input5.value} no esta bien... :/</p>`            
         }
     })
 
@@ -154,17 +203,17 @@ const btn6RtaCorrecta = document.querySelector("#btn6-RtaCorrecta");
 const btn6RtasIncorrectas = document.querySelectorAll(".btn6-RtaInorrecta");
 
 
-btn6RtaCorrecta.innerHTML = EAU.color4
+btn6RtaCorrecta.innerHTML = `<p>${EAU.color4}</p>`
 
 btn6RtaCorrecta.addEventListener("click", () => {
-    pregunta6.innerHTML = `<p class="resultado">Era facil...</p>`
+    pregunta6.innerHTML = `<p class="resultado"> ✅ Era facil...</p>`
     nota++
     console.log(nota);
 }
 )
 btn6RtasIncorrectas.forEach(btn => {
     btn.addEventListener("click", () => {
-        pregunta6.innerHTML = `<p class="resultado">Eso no es un color primario</p>`
+        pregunta6.innerHTML = `<p class="resultado-"> ❌ Eso no es un color primario</p>`
     }
     )
 })
@@ -174,14 +223,14 @@ const btn7RtaCorrecta = document.querySelector("#btn7-RtaCorrecta");
 const btn7RtasIncorrectas = document.querySelectorAll(".btn7-RtaInorrecta");
 
 btn7RtaCorrecta.addEventListener("click", () => {
-    pregunta7.innerHTML = `<p class="resultado"> Muy bien, media tramposa</p>`
+    pregunta7.innerHTML = `<p class="resultado"> ✅ Muy bien, media tramposa</p>`
     nota++
     console.log(nota);
 }
 )
 btn7RtasIncorrectas.forEach(btn => {
     btn.addEventListener("click", () => {
-        pregunta7.innerHTML = `<p class="resultado">MEEHHH</p>`
+        pregunta7.innerHTML = `<p class="resultado-"> ❌❌❌❌</p>`
     }
     )
 })
@@ -222,17 +271,17 @@ const pregunta8 = document.querySelector(".pregunta8")
 const btn8RtaCorrecta = document.querySelector("#btn8-RtaCorrecta");
 const btn8RtasIncorrectas = document.querySelectorAll(".btn8-RtaInorrecta");
 
-btn8RtaCorrecta.innerHTML = paisesLimitrofes[3].nombre
+btn8RtaCorrecta.innerHTML = `<p>${paisesLimitrofes[3].nombre}</p>`
 
 btn8RtaCorrecta.addEventListener("click", () => {
-    pregunta8.innerHTML = `<p class="resultado"> PeRFEcto</p>`
+    pregunta8.innerHTML = `<p class="resultado"> ✅ PeRFEcto</p>`
     nota++
     console.log(nota);
 }
 )
 btn8RtasIncorrectas.forEach(btn => {
     btn.addEventListener("click", () => {
-        pregunta8.innerHTML = `<p class="resultado"> Terrible lo tuyo </p>`
+        pregunta8.innerHTML = `<p class="resultado-"> ❌ Terrible lo tuyo </p>`
     }
     )
 })
@@ -247,11 +296,11 @@ input9.addEventListener("input", (event) => {
 
     btn9.addEventListener("click", (event) => {
         if (input9.value === sumaParseada) {
-            pregunta9.innerHTML = `<p class="resultado"> y si 9 + 12?</p>`
+            pregunta9.innerHTML = `<p class="resultado"> ✅ Y si... 9 + 12?</p>`
             nota++
             console.log(nota);
         } else {
-            pregunta9.innerHTML = `<p class="resultado">nop</p>`
+            pregunta9.innerHTML = `<p class="resultado-"> ❌ No</p>`
         }
     })
 
@@ -260,7 +309,7 @@ input9.addEventListener("input", (event) => {
 function mostrarNota () {
 
 
-    main.innerHTML =    ` <h1>Tabla de Jugadores</h1>
+    main.innerHTML =    ` <h1 class="h1-tabla">Tabla de Jugadores</h1>
     <table class="table">
         <thead>
             <tr>
@@ -315,12 +364,12 @@ IdPregunta10.innerHTML = `Pregunta : 10 Dado el siguiente numero aleatorio, ¿es
 
 btn10.addEventListener("click", () => {
     if (numeroRandom >= Math.PI) {
-        pregunta10.innerHTML = `<p class="resultado"> Espléndido</p>`
+        pregunta10.innerHTML = `<p class="resultado"> ✅ Espléndido</p>`
         nota++
         console.log(nota);
         usuarios.push(nota)
     } else {
-        pregunta10.innerHTML = `<p class="resultado">ño</p>`
+        pregunta10.innerHTML = `<p class="resultado-"> ❌ ÑO</p>`
     }
     mostrarNota()
 
@@ -328,12 +377,12 @@ btn10.addEventListener("click", () => {
 
 btn11.addEventListener("click", () => {
     if (numeroRandom >= Math.PI) {
-        pregunta10.innerHTML = `<p class="resultado">ñoño</p>`
+        pregunta10.innerHTML = `<p class="resultado-"> ❌ WRONG!</p>`
         nota++
         usuarios.push()
         console.log(nota);
     } else {
-        pregunta10.innerHTML = `<p class="resultado">BIENNN</p>`
+        pregunta10.innerHTML = `<p class="resultado"> ✅ BIENNN</p>`
     }
     mostrarNota()
 
