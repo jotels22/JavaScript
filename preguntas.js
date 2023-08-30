@@ -28,10 +28,10 @@ btn1RtaCorrecta.addEventListener("click", () => {
         width: 600,
         padding: '3em',
         color: '#fff' ,
-        background: `#1AAB8A url("/img/nyan-cat-4k.gif") `,
+        background: `#1AAB8A url("../img/nyan-cat-4k.gif") `,
         backdrop: `
           rgba(0,0,123,0.4)
-          url("/img/nyan-cat-4k.gif")
+          url("../img/nyan-cat-4k.gif")
           cover
           repeat
         `
@@ -56,10 +56,10 @@ btn1RtasIncorrectas.forEach(btn => {
             width: 600,
             padding: '3em',
             color: '#fff' ,
-            background: `#1AAB8A url("/img/nyan-cat-4k.gif") `,
+            background: `#1AAB8A url("../img/nyan-cat-4k.gif") `,
             backdrop: `
               rgba(0,0,123,0.4)
-              url("/img/nyan-cat-4k.gif")
+              url("../img/nyan-cat-4k.gif")
               cover
               repeat
             `
