@@ -117,7 +117,7 @@ input{
     height: 4em;
     text-align: center;
     align-items: center;
-    background-color: #1AAB8A;
+    background-color: #1aab897a;
 }
 .notamostrada p {
     margin: 0;
@@ -126,13 +126,15 @@ input{
 .table{
     color: white;
     font-size: 2em;
-    background-color: #1AAB8A;
+    background-color: #1aab897a;
     border-radius: 1em;
+    padding: 0;
+    margin: 0.4em
 }
 
 .footer {
     color: #fff;
-    background-color: #1AAB8A;
+    background-color: #1aab897a;
     font-size: 2em;
     text-align: center;
     padding: 1em;
@@ -170,6 +172,10 @@ input{
     text-shadow: 1px 1px rgba(210, 210, 250, 0.4), 1px 1px rgba(209, 209, 255, 0.4), 3px 1px rgba(123, 123, 230, 0.4), 1px 1px rgba(100, 100, 223, 0.4)
 }
 
+#clear{
+    text-align: center;
+    margin:1em
+}
 
 @media screen and (max-width: 800px) {
     *{

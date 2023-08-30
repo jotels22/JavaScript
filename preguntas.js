@@ -335,7 +335,9 @@ function mostrarNota () {
                 <td>${nota}</td>
             </tr>
         </tbody>
-    </table>`
+    </table>
+    
+    <button id="clear">Listo</button>`
 
 
  if(nota <= 5){
@@ -350,6 +352,14 @@ function mostrarNota () {
  if (nota > 8) {
   footer.innerHTML = ` <footer class="footer"><p>Impresionante *clap* *clap* , un merecido ${nota}</p></footer>
 ` }
+
+const clear = document.querySelector("#clear")
+
+clear.addEventListener("click", () => {
+        usuarios.length = 0
+        console.log(usuarios);
+        localStorage.setItem("jugador", JSON.stringify(usuarios));  
+})
 
 
 
@@ -387,3 +397,4 @@ btn11.addEventListener("click", () => {
     mostrarNota()
 
 })
+
