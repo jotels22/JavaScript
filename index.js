@@ -4,9 +4,21 @@ const usuario = document.querySelector("#usuario")
 const contraseña = document.querySelector("#contraseña")
 const botonEnviar = document.querySelector("#enviar")
 const usuarios = JSON.parse(localStorage.getItem("jugador")) || []
+
+const verificarCampos = () => {
+    return new Promise((resolve, reject) => {
+      if (usuario.value.trim() !== "" && contraseña.value.trim() !== "") {
+        resolve();
+      } else {
+        reject("Completa ambos campos.");
+      }
+    });
+  };
+
 usuario.addEventListener("input", (event) => {
     usuario.value = event.target.value
-    console.log(usuarios);
+    console.log(usuarios);        
+    console.log(usuario.value);
 
 })
 
@@ -17,7 +29,20 @@ contraseña.addEventListener("input", (event) => {
 
 let nota = 0
 
-botonEnviar.addEventListener("click", () => {
+botonEnviar.addEventListener("click", (event) => {  
+
+    verificarCampos()
+      .then(() => {
+      })
+      .catch(error => {
+        Swal.fire(
+            error,
+            'porfavor :(',
+            'error'
+          )
+        usuarios.length = 0
+        event.preventDefault()
+      });  
 
     const nuevoUsuario = {
         nombre: usuario.value,
@@ -32,7 +57,5 @@ botonEnviar.addEventListener("click", () => {
 
     console.log(usuarios);
     localStorage.setItem("jugador", JSON.stringify(usuarios))
-
-
 })
 

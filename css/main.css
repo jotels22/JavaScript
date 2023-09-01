@@ -1,5 +1,6 @@
 *{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box; 
 }
 
 table{
@@ -38,6 +39,12 @@ body{
     margin: 0 16px 0 16px;
     background-size: cover;
     text-decoration: underline;
+    text-align: center; 
+    font-family: Arial Black; 
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #a7ffa3; 
+    text-shadow: 1px 1px #015305, 1px 1px #015505, 3px 1px #004103, 1px 1px #0055047a;
 }
 
 h1 span {
@@ -50,6 +57,7 @@ h3{
     margin-top: 0;
     color: #fff;
     font-size: 1.8em;
+
 }
 
 div{
@@ -129,15 +137,22 @@ input{
     background-color: #1aab897a;
     border-radius: 1em;
     padding: 0;
-    margin: 0.4em
+    margin: 0.4em;
+    text-align: center; 
+    font-family: Arial Black; 
+    font-weight: bold; 
+    font-size: 30px;  
 }
 
 .footer {
     color: #fff;
     background-color: #1aab897a;
-    font-size: 2em;
-    text-align: center;
-    padding: 1em;
+    font-size: 3em;
+    padding: 0.5em;
+    text-align: center; 
+    font-family: Arial Black; 
+    font-weight: bold;      
+    width: 100%;
 }
 
 .resultado-{
@@ -162,19 +177,27 @@ input{
     display: none;
 }
 
-#swal2-title{
+#swal2-title {
     text-align: center ; 
-    
+    background-color: #1a5e6300;
     font-family: Arial Black; 
     font-weight: bold; 
     font-size: 30px; 
-    color: rgba(194, 194, 255, 0.4); 
+    color: rgb(255, 255, 255); 
     text-shadow: 1px 1px rgba(210, 210, 250, 0.4), 1px 1px rgba(209, 209, 255, 0.4), 3px 1px rgba(123, 123, 230, 0.4), 1px 1px rgba(100, 100, 223, 0.4)
 }
-
+.swal2-popup, .swal2-modal, .swal2-show{
+    background-color: #1AAB8A;
+}
 #clear{
     text-align: center;
-    margin:1em
+    margin:1em;
+    text-align: center; 
+    font-family: Arial Black; 
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #a7ffa3; 
+    text-shadow: 1px 1px #006305, 1px 1px #015505, 3px 1px #006d05, 1px 1px #00ff0d7a;
 }
 
 @media screen and (max-width: 800px) {

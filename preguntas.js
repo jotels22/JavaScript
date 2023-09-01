@@ -337,8 +337,7 @@ function mostrarNota () {
         </tbody>
     </table>
     
-    <button id="clear">Listo</button>`
-
+    <a href="../index.html"><button id="clear">Listo</button></a>`
 
  if(nota <= 5){
   footer.innerHTML = ` <footer class="footer"><p>Mal ahí desaprobaste, tu nota es un ${nota}</p></footer>
@@ -397,4 +396,15 @@ btn11.addEventListener("click", () => {
     mostrarNota()
 
 })
+
+async function getPokemon(){
+    const respuesta = await fetch("https://pokeapi.co/api/v2/pokemon/") 
+    const data = await respuesta.json()
+    const numeroRandom2 = Math.random().toFixed(1) * 20
+    const pokemonAleatorio = data.results[numeroRandom2].name
+
+    Swal.fire(`Un ${pokemonAleatorio} salvaje te desea suerte`)
+}
+
+getPokemon()
 
